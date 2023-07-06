@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-    id "io.freefair.lombok" version "8.1.0"
 }
 
 group = 'ru.netology'
@@ -11,9 +10,9 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.5.2'
+    testImplementation 'org.testng:testng:7.7.0'
 }
 
 test {
-    useJUnitPlatform()
+    useTestNG()
 }
